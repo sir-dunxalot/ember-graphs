@@ -1,0 +1,28 @@
+//-------------------------------------------------------------------------------------------
+// Imports
+//-------------------------------------------------------------------------------------------
+
+@import "compass/css3";
+
+@import "variables";
+@import "mixins";
+@import "core";
+
+@import "ember_graphs/graph";
+@import "ember_graphs/graph_bar";
+@import "ember_graphs/graph_line";
+@import "ember_graphs/graph_waterfall";
+
+html {
+  font-size: $baseFontSize;
+}
+
+body {
+  background: #EFEFEF;
+  @include rem(font-size, $bodyFontSize);
+  // So text looks much better in Crome/Safari
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; // Better fonts display for Firefox on Macs
+}

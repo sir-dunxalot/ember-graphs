@@ -1,0 +1,22 @@
+$prefix: 'eg';
+
+// Colors
+
+$tickColor: #cccccc;
+$backgroundColor: #ffffff;
+$borderColor: #000000;
+
+$negative: #b6707d;
+$positive: #abca68;
+
+$lightTextColor: #FFFFFF;
+$darkTextColor: #000000;
+
+$barBackgroundColor: #abca68;
+
+// Sizing
+
+$baseFontSize: 62.5%; // So 1rem = 10px when browser has default font-size of 16px (i.e. 10/16 * 100)
+$bodyFontSize: 1.6; // In rem
+
+$yTickSize: 1;

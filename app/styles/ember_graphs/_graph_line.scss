@@ -1,0 +1,24 @@
+@include class(graph-line) {
+  @include class(x) {
+    text-align: left;
+
+    // Don't display last 'bar' is graph type is line
+    &:last-of-type {
+      display: none;
+    }
+
+    @include class(line) {
+      position: absolute;
+      top: 0;
+      //left: 0;
+      width: 2px;
+      height: 100%;
+      background: black;
+      -webkit-transform-origin: 50% 0;
+      -moz-transform-origin: 50% 0;
+      -ms-transform-origin: 50% 0;
+      -o-transform-origin: 50% 0;
+      transform-origin: 50% 0;
+    }
+  }
+}

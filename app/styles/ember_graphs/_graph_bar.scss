@@ -1,0 +1,25 @@
+@include class(graph-bar) {
+
+  @include class(x) {
+    background-color: $barBackgroundColor;
+    text-align: center;
+  }
+
+  @include class(series) {
+    @include rem(margin-left, $yTickSize);
+
+    &:before {
+      content: '';
+      @extend .absolute;
+      @include rem(left, -1.5 * $yTickSize);
+      top: 0;
+      @extend .full_height;
+      @include rem(width, $yTickSize);
+      background: inherit;
+      background-color: transparent;
+      border: 1px solid $tickColor;
+      border-left: none;
+      border-top: none;
+    }
+  }
+}

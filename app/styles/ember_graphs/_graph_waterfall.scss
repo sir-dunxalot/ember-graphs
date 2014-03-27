@@ -1,0 +1,30 @@
+@include class(graph-waterfall) {
+
+  @include class(x) {
+    text-align: center;
+
+    &:nth-of-type(odd) {
+    }
+
+    &:nth-of-type(even) {
+      background: transparent;
+
+      @include class(x-tick) {
+        @extend .hidden;
+      }
+    }
+  }
+
+  @include class(y) {
+    bottom: 0;
+    text-align: center;
+    @include box-sizing(border-box);
+
+    &:nth-of-type(odd) {
+      @include color($barBackgroundColor);
+      @include rem(font-size, $bodyFontSize * 1.1);
+      @include rem(padding-top, 1);
+    }
+  }
+
+}

@@ -1,0 +1,73 @@
+// @import url('//fonts.googleapis.com/css?family=Lato:300,400');
+
+//-------------------------------------------------------------------------------------------
+// Basic graph styling for all graph types
+//-------------------------------------------------------------------------------------------
+
+@include mod(graph) {
+  font-family: 'Lato';
+  font-weight: 400;
+  @include rem(height, 30);
+  width: 50%;
+  @include rem(padding, 2);
+  @include box-sizing(border-box);
+}
+
+@include class(series) {
+  margin: 0;
+  @extend .relative;
+  @extend .full_height;
+  @extend .full_width;
+
+  // border-style: solid;
+  // border-color: transparent;
+  // @include rem(border-width, 1);
+  border-bottom: 1px solid $borderColor;
+
+  background-color: $backgroundColor;
+  background-image: -ms-linear-gradient(bottom, $tickColor 2%, transparent 2%); // IE11
+  @include background-image(linear-gradient(bottom, $tickColor 2%, transparent 2%)); // Modern browsers
+
+  background-position: bottom 1px left;
+  background-repeat: repeat;
+
+  font-size: 0;
+
+  & > * {
+    @include rem(font-size, $bodyFontSize);
+  }
+}
+
+@include class(x) {
+  @include inline-block;
+  @include box-sizing(border-box);
+  vertical-align: bottom;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@include class(x-tick) {
+  display: block;
+  @extend .relative;
+  @include rem(margin-top, 1);
+  top: 100%;
+}
+
+@include class(y) {
+  @extend .absolute;
+  @include rem(left, -2);
+  margin: 0;
+  //display: none;
+}
+
+@include class(positive) {
+  color: $positive;
+}
+
+@include class(negative) {
+  color: $negative;
+}
+
+@include class(caption) {
+  @extend .hidden;
+}

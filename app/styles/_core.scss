@@ -1,0 +1,62 @@
+// ----------------------------------------------------------------------------------------------------------------------------
+// Some HTML5 Boilerplate v4.3.0 Core Classes
+// ----------------------------------------------------------------------------------------------------------------------------
+
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+// THESE RULES STOP TEXT SELECTION AND HAVE BEEN REMOVED FROM THE CSS3/4 DRAFTS
+// ::-moz-selection {
+//     text-shadow: none;
+// }
+
+// ::selection {
+//     text-shadow: none;
+// }
+
+.removed {
+  display: none !important;
+  visibility: hidden;
+}
+
+// Hide only visually, but have it available for screenreaders: h5bp.com/v
+.hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+// Extends the .visuallyhidden class to allow the element to be focusable
+.hidden.focusable:active,
+.hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+// ----------------------------------------------------------------------------------------------------------------------------
+// Ember Graphs core classes
+// ----------------------------------------------------------------------------------------------------------------------------
+
+.full_height {
+  height: 100%;
+}
+
+.full_width {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
