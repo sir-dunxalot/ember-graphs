@@ -1,6 +1,8 @@
 Ember Graphs
 ======
 
+[![Build Status](https://travis-ci.org/sir-dunxalot/ember-graphs.svg?branch=master)](https://travis-ci.org/sir-dunxalot/ember-graphs)
+
 Ember Graphs is a lightweight, cross-browser, responsive graphing library for Ember.js built with HTML5 and styled with CSS3.
 
 - Work in progress
