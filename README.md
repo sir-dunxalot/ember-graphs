@@ -1,16 +1,14 @@
-Ember Graphs
+Ember Graphs [![Build Status](https://travis-ci.org/sir-dunxalot/ember-graphs.svg?branch=master)](https://travis-ci.org/sir-dunxalot/ember-graphs)
 ======
-
-[![Build Status](https://travis-ci.org/sir-dunxalot/ember-graphs.svg?branch=master)](https://travis-ci.org/sir-dunxalot/ember-graphs)
 
 Ember Graphs is a lightweight, cross-browser, responsive graphing library for Ember.js built with HTML5 and styled with CSS3.
 
-![Warning](http://img233.imageshack.us/img233/1746/warning16.png "Warning")  - Warning - Ember Graphs is in early development mode. Use with caution.
+![Warning](http://img233.imageshack.us/img233/1746/warning16.png "Warning") Warning - Ember Graphs is in early development mode. Use with caution.
 
-- Ember.js graphing library
-- CSS styled, no SVG
-- Semantic HTML
-- Bar charts, line graphs, waterfall charts, pie charts
+1. [Installation](https://github.com/sir-dunxalot/ember-graphs#installation)
+2. Usage
+3. Options
+4. Contributing
 
 Installation
 ------
