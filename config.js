@@ -42,7 +42,7 @@ exports.config = {
         javascripts: {
           joinTo: {
             // List plugin directories and files here
-            'ember-graphs.js': /^(app\/initializers\/namespace|app\/mixins|app\/components|app\/helpers|app\/views\/data_pair_view|app\/views\/series_view)/
+            'ember-graphs.min.js': /^(app\/initializers\/namespace|app\/mixins|app\/components|app\/helpers|app\/views)/
           },
           order: {
             before: [
@@ -56,7 +56,7 @@ exports.config = {
         },
         stylesheets: {
           joinTo: {
-            'ember-graphs.css': /^app/
+            'ember-graphs.min.css': /^app/
           },
         },
         templates: {
@@ -66,26 +66,31 @@ exports.config = {
         }
       },
       conventions: {
-        // ignored: /^huh/
-        // ignored: function(path) {
-          // var index = 'app/assets/index.js';
-        //   return index === path;
-        // },
         ignored: function(path) {
           var sep, startsWith;
           var sysPath = require('path');
-          var indexPath = 'app/assets/index.html';
+          var ignores = [
+            'app/assets/index.html',
+            'app/views/index_view.js'
+          ];
 
           startsWith = function(string, substring) {
             return string.indexOf(substring, 0) === 0;
           };
 
-          sep = sysPath.sep;
-
-          // Ignore index.html
-          if (path === indexPath) {
-            return true;
+          for ( var i = 0; i < ignores.length; i++ ) {
+            if (ignores[i] === path) {
+              return true;
+            }
           }
+
+          // ignores.forEach(function(ignore) {
+          //   if (path === ignore) {
+          //     return true;
+          //   }
+          // });
+
+          sep = sysPath.sep;
 
           // Regular Brunch ignoring
           if (path.indexOf("app" + sep + "templates" + sep) === 0) {
@@ -94,6 +99,29 @@ exports.config = {
             return startsWith(sysPath.basename(path), '_');
           }
         }
+        // ignored: function(path) {
+        //   var sep, startsWith;
+        //   var sysPath = require('path');
+        //   var indexPath = 'app/views/index_view.js';
+
+        //   startsWith = function(string, substring) {
+        //     return string.indexOf(substring, 0) === 0;
+        //   };
+
+        //   sep = sysPath.sep;
+
+        //   // Ignore index.html
+        //   if (path === indexPath) {
+        //     return true;
+        //   }
+
+        //   // Regular Brunch ignoring
+        //   if (path.indexOf("app" + sep + "templates" + sep) === 0) {
+        //     return false;
+        //   } else {
+        //     return startsWith(sysPath.basename(path), '_');
+        //   }
+        // }
       },
       modules: {
         wrapper: false,
