@@ -84,12 +84,6 @@ exports.config = {
             }
           }
 
-          // ignores.forEach(function(ignore) {
-          //   if (path === ignore) {
-          //     return true;
-          //   }
-          // });
-
           sep = sysPath.sep;
 
           // Regular Brunch ignoring
@@ -99,56 +93,11 @@ exports.config = {
             return startsWith(sysPath.basename(path), '_');
           }
         }
-        // ignored: function(path) {
-        //   var sep, startsWith;
-        //   var sysPath = require('path');
-        //   var indexPath = 'app/views/index_view.js';
-
-        //   startsWith = function(string, substring) {
-        //     return string.indexOf(substring, 0) === 0;
-        //   };
-
-        //   sep = sysPath.sep;
-
-        //   // Ignore index.html
-        //   if (path === indexPath) {
-        //     return true;
-        //   }
-
-        //   // Regular Brunch ignoring
-        //   if (path.indexOf("app" + sep + "templates" + sep) === 0) {
-        //     return false;
-        //   } else {
-        //     return startsWith(sysPath.basename(path), '_');
-        //   }
-        // }
       },
       modules: {
         wrapper: false,
         definition: false
       },
-      // conventions: {
-      //   ignored: function(path) {
-      //     var sep, startsWith;
-      //     var sysPath = require('path');
-
-      //     startsWith = function(string, substring) {
-      //       return string.indexOf(substring, 0) === 0;
-      //     };
-
-      //     sep = sysPath.sep;
-
-      //     if (startsWith(sysPath.basename(path), '-')) {
-      //       return true;
-      //     }
-
-      //     if (path.indexOf("app" + sep + "templates" + sep) === 0) {
-      //       return false;
-      //     } else {
-      //       return startsWith(sysPath.basename(path), '_');
-      //     }
-      //   }
-      // },
       optimize: true,
       sourceMaps: false,
       plugins: {

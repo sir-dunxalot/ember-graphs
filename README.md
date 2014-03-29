@@ -54,8 +54,6 @@ Ember Graphs is plug-and-play, requiring no config. The only caveat is that the 
 Options
 ------
 
-**Default options**
-
 Default options are set in `EmberGraphs.EmberGraphComponent`.
 
 ```javascript
@@ -142,3 +140,4 @@ Contributing
 2. Run task `brunch watch -s` to run the server and live preview your changes
 2. Make your changes to the files in the app directory
 3. Run `brunch build --production` to automatically compile your js, hbs, and scss to the src folder
+4. Issue pull request against develop branch
