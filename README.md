@@ -71,20 +71,20 @@ The options for each individual graph can be overwritten on the handlebars helpe
 {{ember-graph series=graphData prefix='em' type=view.graphType}}
 ```
 
-**Height and Width**
+### Height and Width
 
 Height and width can be set in your css on `figure.[prefix]-graph-[type]`. You can also set an element id to target height and width of a specific graph on the page.
 
 For a responsive graph, set the width to a percentage. Alternatively, set the width to 100% and wrap the graph component in a wrapper element with a fluid width.
 
-**type**
+### type
 
 Default: 'line'
 Allowed values: 'bar', 'line', or 'waterfall'
 
 `type` sets the type of graph or chart to display. Often, it is useful to bind this value to a view property to allow the user to choose how they want to visualize the data.
 
-**fromZero**
+### fromZero
 
 Default: false
 Allowed values: true or false (boolean)
@@ -92,7 +92,7 @@ Allowed values: true or false (boolean)
 `fromZero` tells the graph component whether the lowest point on the graph should be zero or the minimum y value. When set to false, this renders a [truncated graph](http://en.wikipedia.org/wiki/Misleading_graph#Truncated_graph).
 
 
-**caption**
+### caption
 
 Default: null
 Allowed values: any string
@@ -100,7 +100,7 @@ Allowed values: any string
 The graph is a `<figure>` element and, therefore, can include an [optional `<figcaption>` element](http://html5doctor.com/the-figure-figcaption-elements/) for acessability and semantic purposes. The `caption` option sets the text content of the `<figcaption>`, which is hidden visually but available to screenreaders.
 
 
-**tickDistanceTarget**
+### tickDistanceTarget
 
 Default: 50
 Allowed values: any number
@@ -108,7 +108,7 @@ Allowed values: any number
 `tickDistanceTarget` sets the rough number of pixels inbetween each tick line on the y-axis. The graph component will calculate the pixel height of every value on the y-axis and will draw lines between points that occur roughly every 'x' number of pixels from each other.
 
 
-**prefix**
+### prefix
 
 Default: 'eg'
 Allowed values: any string that constitutes a valid DOM element class
@@ -118,7 +118,7 @@ Allowed values: any string that constitutes a valid DOM element class
 Typically, you won't need to set this option unless there is a naming clash with another library.
 
 
-**id**
+### id
 
 Default: none
 Allowed values: any string that constitutes a valid DOM element id
@@ -126,7 +126,7 @@ Allowed values: any string that constitutes a valid DOM element id
 `id` can be useful for setting the size of a particular graph on a page.
 
 
-**class**
+### class
 
 Default: '[prefix]-graph-[type]'
 Allowed values: any string that constitutes a valid DOM element class
