@@ -5,7 +5,7 @@ Ember Graphs
 
 Ember Graphs is a lightweight, cross-browser, responsive graphing library for Ember.js built with HTML5 and styled with CSS3.
 
-![Warning](http://img233.imageshack.us/img233/1746/warning16.png "Warning") Warning - Ember Graphs is in early development mode. Use with caution.
+![Warning](http://img233.imageshack.us/img233/1746/warning16.png "Warning")  - Warning - Ember Graphs is in early development mode. Use with caution.
 
 - Ember.js graphing library
 - CSS styled, no SVG
