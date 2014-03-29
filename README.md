@@ -1,4 +1,4 @@
-Ember Graphs [![Build Status](https://travis-ci.org/sir-dunxalot/ember-graphs.svg?branch=master)](https://travis-ci.org/sir-dunxalot/ember-graphs)
+Ember Graphs `v0.1.0` [![Build Status](https://travis-ci.org/sir-dunxalot/ember-graphs.svg?branch=master)](https://travis-ci.org/sir-dunxalot/ember-graphs)
 ======
 
 Ember Graphs is a lightweight, cross-browser, responsive graphing library for Ember.js built with semantic HTML5 and styled with CSS3.
@@ -140,3 +140,15 @@ Contributing
 2. Make your changes to the files in the app directory
 3. Run `brunch build --production` to automatically compile your js, hbs, and scss to the src folder
 4. Issue pull request against develop branch
+
+Todos and Known Issues
+------
+
+**Todos**
+- Add pie chart
+- Y axis numbers
+- Option for axis or no axis
+- Waterfall chart with percentage and absolute numbers
+
+**Issues**
+- Non-responsive x axis text
